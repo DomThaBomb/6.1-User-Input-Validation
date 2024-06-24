@@ -1,0 +1,72 @@
+<!-- Domnik Tramondo -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+  <!-- Navigation Links -->
+    <nav>
+        <a href="https://www.uat.edu/">
+            <img src="uat-logo.png" alt="UAT Logo"/>
+        </a>
+        <a href="learn_js.html">Home</a>
+        <a href="basic.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="signup.html">Sign up</a>
+    </nav>
+   <!-- Content -->
+    <h1>University of Advancing Technology</h1>
+    <h2>Welcome to the Home Page!</h2>
+    <p>Domnik Tramondo is an asspiring game designer student over at UAT.</p>
+    <p id="sample"></p>
+
+    <!-- JavaScript -->
+<!--     <button type="button" onclick="document.getElementById('sample').innerHTML = ''">Click me</button><br><br> -->
+<!--  form  -->
+  <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="firstname">First name</label>
+                <input id="firstname" name="firstname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="lastname">Last name</label>
+                <input id="lastname" name="lastname" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="zipcode">Zip Code</label>
+                <input id="zipcode"name="zipcode" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit" type="button" onclick="document.getElementById('sample').innerHTML = 'Hello Jael'">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
